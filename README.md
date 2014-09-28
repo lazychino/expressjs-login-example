@@ -9,7 +9,10 @@ google search you end up reading about passportjs and everyauth
 
 so here is a working example you can mess with it
 
-the login code is in [app.js](https://github.com/lazychino/express-login-example/blob/master/app.js)
-everthing else is for the demo
+##### the login code is in [app.js](https://github.com/lazychino/express-login-example/blob/master/app.js) everthing else is for the demo
 
-any issues or get hit the issues! :) happy coding
+to run the demo just run `npm install` then `npm start`
+
+any issues or need help? hit the issues! 
+
+### :) happy coding
