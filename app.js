@@ -23,6 +23,9 @@ app.use(session({
 }));
 
 
+// login stuff
+
+
 app.get('/login', function(req, res) {   // serve login form
     res.render('login', { message: '' });
 });
@@ -31,7 +34,7 @@ app.post('/login', function(req, res, next) {
     var username = req.body.username;
     var password = req.body.password;
     
-    // here you check the login info any way you want
+    // inside here you check the login info any way you want
     // use next(err) if a error happens here
     
     if(username !== "user") {
@@ -72,7 +75,7 @@ app.get('/hello', isLoggedIn, function(req, res) {  // authenticated a single ro
 // or this
 app.use(isLoggedIn);      
 // all routes after this middleware are available only to logged users 
-// if you comment the middle ware you can enter '/' without logging in
+// if you comment the middleware you can enter '/' without logging in
 
 app.use('/', function(req, res) {
     res.render('index', { title: 'Express-login example demo' });
