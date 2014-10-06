@@ -1,4 +1,4 @@
-express-login-example
+expressjs-login-example
 =====================
 
 Example of simple local login for expressjs
